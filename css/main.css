@@ -10,16 +10,31 @@
    padding: 0;
  }
 
+ body {
+   background-color: #f4f6f7;
+ }
  /* Estilos del header */
 
  header {
-   outline: 1px solid orange;
+   position: fixed;
    width: 100%;
    text-align: center;
+   background-color: #fff;
  }
 
  img {
-   margin: 0.8% auto 0.3%;
+   margin: 0.7% auto 0.3%;
    width: 13.5%;
    height: 13%;
+ }
+
+ header span {
+   display: inline-block;
+   position: absolute;
+   left: 90.8%;
+   top: 32%;
+ }
+
+ .fa-bars {
+
  }
