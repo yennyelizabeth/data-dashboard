@@ -1,3 +1,25 @@
 /*
  * Estilos de tu proyecto
  */
+
+ /* Estilos generales */
+
+ * {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+
+ /* Estilos del header */
+
+ header {
+   outline: 1px solid orange;
+   width: 100%;
+   text-align: center;
+ }
+
+ img {
+   margin: 0.8% auto 0.3%;
+   width: 13.5%;
+   height: 13%;
+ }
