@@ -3,9 +3,131 @@
   <head>
     <meta charset="utf-8">
     <title>Data Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-
+    <!-- Contenido principal -->
+    <main>
+      <!-- Sección principal -->
+      <section id="principal-section" class="container">
+        <section class="section-1">
+          <div class="">
+            <h2>enrollment</h2>
+            <div class="">
+                <div>120</div>
+                <div># STUDENTS CURRENTLY ENROLLED</div>
+            </div>
+            <div class="">
+              <div>20%</div>
+              <div>% DROPOUTt</div>
+            </div>
+            <img src="assets/images/bar-graph.png" alt="Gráfico de columnas">
+          </div>
+          <div>
+            <h2>achievement</h2>
+            <div>
+              <div>105</div>
+              <div># STUDENTS THAT MEET THE TARGET</div>
+              </div>
+              <div>
+                <div>
+                  <span>78%</span>
+                  <i class="fa fa-caret-up" aria-hidden="true"></i>
+                </div>
+                <div>% OF TOTAL (135)</div>
+              </div>
+            </div>
+            <img src="assets/images/graph.png" alt="Gráfico de líneas">
+          <div>
+            <h2>net promoter score</h2>
+            <div>
+              <div>
+                <span>78%</span>
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+              </div>
+              <div>% CUMULATIVE NPS</div>
+            </div>
+            <div>
+              <ul>
+                <li>60% Promoters</li>
+                <li>30% Passive</li>
+                <li>10% Detractors</li>
+              </ul>
+              <img src="assets/images/graph.png" alt="Gráfico de líneas">
+            </div>
+          </div>
+        </section>
+        <section class="section-2">
+          <h2>tech skills</h2>
+          <select class="" name="">
+            <option value="">overall (acumulative)</option>
+          </select>
+          <div>
+            <div>90</div>
+            <div># STUDENTS THAT MEET THE TARGET</div>
+          </div>
+          <div>
+            <div>62</div>
+            <div>% OF TOTAL (135)</div>
+          </div>
+          <img src="assets/images/rectangular-graphic.png" alt="Gráfico de Columnas Rectangular">
+          <img src="assets/images/circle-graphic.png" alt="Gráfico Circular">
+          <div>
+            <div># STUDENTS THAT MEET THE TARGET</div>
+            <div># STUDENTS THAT DON'T MEET THE TARGET</div>
+          </div>
+        </section>
+        <section class="section-3">
+          <h2>life skills</h2>
+          <select class="" name="">
+            <!-- Como el último sprint es el 4, por eso se empieza desde allí -->
+            <option value="">Sprint 4</option>
+            <option value="">Sprint 3</option>
+            <option value="">Sprint 2</option>
+            <option value="">Sprint 1</option>
+          </select>
+          <div>
+            <div>80</div>
+            <div># OVERALL CLASS AVERAGE</div>
+          </div>
+          <div>
+            <div>62</div>
+            <div># OF STUDENTS THAT MEET THE TARGET</div>
+          </div>
+          <img src="assets/images/rectangular-graphic.png" alt="Gráfico de Columnas Rectangular">
+          <img src="assets/images/circle-graphic.png" alt="Gráfico Circular">
+          <div>
+            <div># STUDENTS THAT MEET THE TARGET</div>
+            <div># STUDENTS THAT DON'T MEET THE TARGET</div>
+          </div>
+        </section>
+        <section class="section-4">
+          <div>
+            <h2>student satisfaction</h2>
+            <div>140</div>
+            <div>% MEETING OR EXCEEDING EXPECTATIONS (CUMULATIVE)</div>
+            <img src="assets/images/graph.png" alt="Gráfico de líneas">
+          </div>
+          <div>
+            <h2>teacher rating</h2>
+            <div>4.2</div>
+            <div>OVERALL TEACHER RATING<br>(CUMULATIVE)</div>
+            <img src="assets/images/graph.png" alt="Gráfico de líneas">
+          </div>
+          <div>
+            <h2>jedi master rating</h2>
+            <div>
+              <span>50%</span>
+              <i class="fa fa-caret-up" aria-hidden="true"></i>
+            </div>
+            <div>OVERALL JEDI RATING<br>(CUMULATIVE)</div>
+            <img src="assets/images/graph.png" alt="Gráfico de líneas">
+          </div>
+        </section>
+      </section>
+    </main>
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
 		<!-- Aquí va tus archivos JS -->
