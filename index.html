@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Data Dashboard</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="'https://fonts.googleapis.com/css?family=Montserrat:400,700,800&amp;subset=latin-ext'" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -12,6 +13,19 @@
       <img src="assets/images/logo-laboratoria.svg" alt="Logo de Laboratoria">
       <span><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
     </header>
+    <!-- Menú hamburguesa-->
+    <ul id="hamburguer-menu" class="list-menu display-none">
+      <li class="profile">
+        <div class="container">
+          <img src="assets/images/user-picture.jpg" alt="Imagen de Perfil">
+          <span class="name">Anna Durand</span>
+          <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </div>
+      </li>
+      <li class="option"><span>Add student</span></li>
+      <li class="option"><span>Remove student</span></li>
+      <li class="option-different-style"><span>Add sprint</span></li>
+    </ul>
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
 		<!-- Aquí va tus archivos JS -->
