@@ -13,13 +13,12 @@
 
 body {
   background-color: #f4f6f7;
-  width: 1366px; /* Este ancho es temporal, es el ancho de la pantalla visible de mi laptop. Este valor es usado como referencia cuando trabajo en mi computadora en casa */
 }
 
 main {
   outline: 1px solid purple;
-  width: 95%;
-  margin-left: 23%;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* Estilos a la sección principal y contenedores generales*/
@@ -50,20 +49,20 @@ h2 {
 
 .div-1, .div-2, .div-3, .div-6, .div-7, .div-8 {
   width: 25%;
-  /*height: 50%;*/
+  height: 300px;
 }
 
 .little-div-1, .little-div-2, .little-div-3, .little-div-4, .little-div-5, .little-div-6, .little-div-7, .little-div-8, .little-div-10, .little-div-11, .little-div-13, .little-div-14, .little-div-15 {
-  background-color: #F8F9F9;
+  background-color: #e5e7e9;  /*#F8F9F9;*/
   display: inline-block;
 }
 
-/* Estilos a la primera subsección*/
+/* Estilos generales a la primera subsección*/
 
 .section-1 {
-  padding-top: 4%;
-  padding-bottom: 7%;
-  font-size: 0.8em;
+  /*padding-top: 4%;
+  padding-bottom: 7%;*/
+  font-size: 0.9em;
 }
 
 .div-1, .div-2, .div-3 {
@@ -71,18 +70,105 @@ h2 {
 }
 
 .section-1 h2 {
-  text-align: left;
   padding-bottom: 5%;
 }
-/* Estilos al contenedor general(div) nº2 */
 
-/* Estilos a los pequeños contenedores dentro de los contenedores generales de section */
+.section-1 img {
+  display: inline-block;
+}
+
+/* Estilos al contenedor general nº1 */
+
+.div-1 {
+  margin-left: 9%;
+  position: relative;
+  top: 17px;
+}
+/* Estilos al contenedor general nº2 */
+.div-2 {
+  margin-left: 3.7%;
+}
+
+.div-2 img {
+  position: relative;
+  top: 17px;
+}
+
+/* Estilos al contenedor general nº3 */
+.div-3 {
+  margin-left: 3.3%;
+  position: relative;
+  top: 6px;
+}
+
+.div-3 img {
+  position: relative;
+  top: 11px;
+}
+
+/* Estilos generales a los pequeños contenedores dentro de los contenedores generales de section */
 
 .little-div-1, .little-div-2, .little-div-3, .little-div-4, .little-div-5, .little-div-6 {
   width: 45%;
-  font-size: 0.77em;
+  height: 25%;
+  font-size: 0.69em;
+  text-align: center;
 }
-/* Estilos a los pequeños contenedores dentro del contenedor general nº3 */
+
+.little-div-1, .little-div-2 {
+  margin-top: 2%;
+}
+
+.little-div-3, .little-div-4 {
+  margin-top: 2.7%;
+}
+
+
+.little-div-2, .little-div-4 {
+  position: relative;
+  bottom: 12px;
+}
+
+/* Estilos para cada uno de los pequeños contenedores dentro de los contenedores generales de section */
+
+.little-div-1 {
+  position: relative;
+  bottom: 1px;
+}
+
+.little-div-5 {
+  position: relative;
+  bottom: 18px;
+}
+
+.little-div-6 {
+  font-size: 0.94em;
+  position: relative;
+  top: 9px;
+}
+
+/* Estilos para el contenido de cada uno de los pequeños contenedores dentro de los contenedores generales de section */
+
+.mini-div-1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 2% 0 3%;
+}
+
+.red {
+  color: #e74c3c;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 2% 0 4%;
+}
+
+.green {
+  
+}
+
 .little-div-6 ul {
   list-style: none;
+  text-align: left;
+  padding-top: 3%;
+  margin-left: 7%;
 }
