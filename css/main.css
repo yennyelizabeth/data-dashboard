@@ -25,7 +25,6 @@ main {
 /* Estilos a la sección principal, contenedores generales o que sus elementos comparten ciertas propiedades de estilo */
 
 .container {
-  outline: 1px solid red;
   width: 100%;
   height: 100%;
 }
