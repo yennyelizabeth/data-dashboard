@@ -61,10 +61,10 @@ window.addEventListener('load', function(event) {
           averageScoreForTeachers += teacherScore;
         }
         /* El Net Promoter Score (NPS) promedio de los sprints cursados */
-        debugger;
-        var promoters = totalPromoters * 100;
-        var passive = totalPassive * 100;
-        var detractors = totalDetractors * 100;
+        var totalScore = totalPromoters + totalPassive + totalDetractors;
+        var promoters = Math.round(totalPromoters / totalScore) * 100;
+        var passive = Math.round(totalPassive / totalScore) * 100;
+        var detractors = Math.round(totalDetractors / totalScore) * 100;
         var nps = promoters - detractors;
         score5.textContent = nps + '%';
         /* Porcentaje de estudiantes satisfechas */

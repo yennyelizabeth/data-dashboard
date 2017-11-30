@@ -8,27 +8,10 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-
-    <nav>
-      <select name="navbar" id="navbar">
-        <option value="offices">Sedes</option>
-        <option value="aq-2016-2">Arequipa 2016-II</option>
-        <option value="aq-2017-1">Arequipa 2017-I</option>
-        <option value="cm-2017-1">Ciudad de México 2017-I</option>
-        <option value="cm-2017-2">Ciudad de México 2017-II</option>
-        <option value="lm-2016-2">Lima 2016-II</option>
-        <option value="lm-2017-1">Lima 2017-I</option>
-        <option value="lm-2017-2">Lima 2017-II</option>
-        <option value="ch-2016-2">Chile 2016-II</option>
-        <option value="ch-2017-1">Chile 2017-I</option>
-        <option value="ch-2017-2">Chile 2017-II</option>
-      </select>
-    </nav>
-
     <!-- Contenido principal -->
-    <main id="principal-content" >
+    <main>
       <!-- Sección principal -->
-      <section class="container">
+      <section id="principal-section" class="container">
         <section class="section-1">
           <div class="div-1">
             <h2>enrollment</h2>
@@ -61,16 +44,16 @@
             <h2>net promoter score</h2>
             <div class="little-div-5">
               <div class="green">
-                <span id="nps">78%</span>
+                <span>78%</span>
                 <i class="fa fa-caret-up" aria-hidden="true"></i>
               </div>
               <div>% CUMULATIVE NPS</div>
             </div>
             <div class="little-div-6">
               <ul>
-                <li id="promoters">60 % Promoters</li>
-                <li id="passive">30 % Passive</li>
-                <li id="detractors">10 % Detractors</li>
+                <li>60 % Promoters</li>
+                <li>30 % Passive</li>
+                <li>10 % Detractors</li>
               </ul>
             </div>
             <img src="assets/images/graph.png" alt="Gráfico de líneas">
@@ -79,19 +62,7 @@
         <section class="section-2">
           <h2>tech skills</h2>
           <select class="" name="">
-            <option>overall (acumulative)</option>
-            <option>Common Core-Sprint 1</option>
-            <option>Common Core-Sprint 2</option>
-            <option>Common Core-Sprint 3</option>
-            <option>Common Core-Sprint 4</option>
-            <option>Javascript-Sprint 5</option>
-            <option>Javascript-Sprint 6</option>
-            <option>Javascript-Sprint 7</option>
-            <option>Javascript-Sprint 8</option>
-            <option>UX Design-Sprint 5</option>
-            <option>UX Design-Sprint 6</option>
-            <option>UX Design-Sprint 7</option>
-            <option>UX Design-Sprint 8</option>
+            <option value="">overall (acumulative)</option>
           </select>
           <div class="div-4">
             <div class="little-div-7">
@@ -103,18 +74,16 @@
               <div>% OF TOTAL (135)</div>
             </div>
           </div>
-          <img src="assets/images/rectangular-graphic.png" class="rectangular-graphic" alt="Gráfico de Columnas Rectangular">
+          <img src="assets/images/rectangular-graphic.png" class="rectangular-graphic"alt="Gráfico de Columnas Rectangular">
           <div class="little-div-9">
-            <img src="assets/images/circle-graphic.png" class="circle-graphic" alt="Gráfico Circular">
-            <div>
-              <div class="color-container">
-                <div class="color-green"></div>
-                <div class="student"># STUDENTS THAT MEET THE TARGET</div>
-              </div>
-              <div class="color-container">
-                <div class="color-red"></div>
-                <div class="student"># STUDENTS THAT DON'T MEET THE TARGET</div>
-              </div>
+            <img src="assets/images/circle-graphic.png" alt="Gráfico Circular">
+            <div class="color-container">
+              <div class="color-green"></div>
+              <div class="student"># STUDENTS THAT MEET THE TARGET</div>
+            </div>
+            <div class="color-container">
+              <div class="color-red"></div>
+              <div class="student"># STUDENTS THAT DON'T MEET THE TARGET</div>
             </div>
           </div>
         </section>
@@ -139,16 +108,14 @@
           </div>
           <img src="assets/images/rectangular-graphic.png" class="rectangular-graphic" alt="Gráfico de Columnas Rectangular">
           <div class="little-div-12">
-            <img src="assets/images/circle-graphic.png" class="circle-graphic" alt="Gráfico Circular">
-            <div>
-              <div class="color-container">
-                <div class="color-green"></div>
-                <div class="student"># STUDENTS THAT MEET THE TARGET</div>
-              </div>
-              <div class="color-container">
-                <div class="color-red"></div>
-                <div class="student"># STUDENTS THAT DON'T MEET THE TARGET</div>
-              </div>
+            <img src="assets/images/circle-graphic.png" alt="Gráfico Circular">
+            <div class="color-container">
+              <div class="color-green"></div>
+              <div class="student"># STUDENTS THAT MEET THE TARGET</div>
+            </div>
+            <div class="color-container">
+              <div class="color-red"></div>
+              <div class="student"># STUDENTS THAT DON'T MEET THE TARGET</div>
             </div>
           </div>
         </section>
@@ -156,7 +123,7 @@
           <div class="div-6">
             <h2>student satisfaction</h2>
           <div class="little-div-13">
-            <div id="satisfied-students" class="big-number">140</div>
+            <div class="big-number">140</div>
             <div>% MEETING OR EXCEEDING EXPECTATIONS (CUMULATIVE)</div>
           </div>
             <img src="assets/images/graph.png" alt="Gráfico de líneas">
@@ -164,7 +131,7 @@
           <div class="div-7">
             <h2>teacher rating</h2>
             <div class="little-div-14">
-              <div id="average-score-for-teachers" class="big-number">4.2</div>
+              <div class="big-number">4.2</div>
               <div>OVERALL TEACHER RATING<br>(CUMULATIVE)</div>
             </div>
             <img src="assets/images/graph.png" alt="Gráfico de líneas">
@@ -172,8 +139,8 @@
           <div class="div-8">
             <h2>jedi master rating</h2>
             <div class="little-div-15">
-              <div class="fifty">
-                <span id="average-score-for-jedi">50</span>
+              <div class="green big-number fifty">
+                <span>50%</span>
                 <i class="fa fa-caret-up" aria-hidden="true"></i>
               </div>
               <div>OVERALL JEDI RATING (CUMULATIVE)</div>
