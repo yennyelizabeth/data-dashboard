@@ -95,7 +95,7 @@ h2 {
 .div-1 {
   margin-left: 9%;
   position: relative;
-  top: 17px;
+  top: 16px;
 }
 /* Estilos al contenedor general nº2 */
 .div-2 {
@@ -126,6 +126,10 @@ h2 {
   height: 25%;
   font-size: 0.69em;
   text-align: center;
+}
+
+.little-div-1, .little-div-2, .little-div-3, .little-div-4, .little-div-5 {
+  width: 45%;
 }
 
 .little-div-1, .little-div-2 {
@@ -161,6 +165,7 @@ h2 {
   font-size: 0.94em;
   position: relative;
   top: 5px;
+  width: 48%;
 }
 
 .little-div-6 ul {

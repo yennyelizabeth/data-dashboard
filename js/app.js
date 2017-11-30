@@ -7,7 +7,8 @@ console.log(data);
 
 window.addEventListener('load', function(event) {
   var select = document.getElementById('navbar');
-  var sedes = Object.keys(data); // AQ, CDM, LM, CH
+  var selectHse = document.getElementById('hse-select-element');
+  var sedes = Object.keys(data);
   var generations = Object.values(data);
   var score5 = document.getElementById('nps');
   var promotersContainer = document.getElementById('promoters');
@@ -20,7 +21,6 @@ window.addEventListener('load', function(event) {
     var office;
     var arrayOfGenerations;
     var specificGeneration;
-    /* score10.textContent = ' '; */
     if (true) {
       if (select.value === 'aq-2016-2') {
         // alert(select.value);
@@ -61,11 +61,14 @@ window.addEventListener('load', function(event) {
           averageScoreForTeachers += teacherScore;
         }
         /* El Net Promoter Score (NPS) promedio de los sprints cursados */
-        debugger;
-        var promoters = totalPromoters * 100;
-        var passive = totalPassive * 100;
-        var detractors = totalDetractors * 100;
+        var totalScore = totalPromoters + totalPassive + totalDetractors;
+        var promoters = (totalPromoters / totalScore) * 100;
+        var passive = (totalPassive / totalScore) * 100;
+        var detractors = (totalDetractors / totalScore) * 100;
         var nps = promoters - detractors;
+        promotersContainer.textContent = promoters + ' %' + ' Promoters';
+        passiveContainer.textContent = passive + ' %' + ' Passive';
+        detractorsContainer.textContent = detractors + ' %' + ' Detractors';
         score5.textContent = nps + '%';
         /* Porcentaje de estudiantes satisfechas */
         var total = dontMeet + meet + exceed;
@@ -78,9 +81,8 @@ window.addEventListener('load', function(event) {
         score9.textContent = averageScore2;
         /* Puntuación promedio de los jedi */
         var averageScore = Math.round(averageScoreForJedi / 4);
-        // alert(averageScore);
         score10.textContent = averageScore;
-        // console.log(averageScore);
+        // Hallando la cantidad y el porcentaje que (representa el total de estudiantes que superan la meta de puntos de HSE en promedio y por sprint.
       }
     }
     /* case event.target.value === 'aq-2017-1':
