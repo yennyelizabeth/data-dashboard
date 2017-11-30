@@ -3,6 +3,7 @@
  */
 
 /* Estilos generales */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,10 +14,10 @@
 body {
   background-color: #f4f6f7;
   color: #2b2b2b;
+  width: 1366px;
 }
 
 main {
-  outline: 1px solid purple;
   width: 100%;
   margin: 0 auto;
 }
@@ -48,7 +49,6 @@ h2 {
 }
 
 .section-1, .section-2, .section-3, .section-4 {
-  outline: 1px solid orange;
   height: 25%;
   font-size: 0.9em;
 }
@@ -72,11 +72,11 @@ h2 {
   display: inline-block;
 }
 
-/* Estilos generales a la primera subsección*/
+/* Estilos generales a la 1ra subsección*/
 
 .section-1 {
-  /*padding-top: 4%;
-  padding-bottom: 7%;*/
+  padding-top: 4%;
+  padding-bottom: 7%;
 }
 
 .div-1, .div-2, .div-3 {
@@ -120,7 +120,7 @@ h2 {
   top: 11px;
 }
 
-/* Estilos generales a los pequeños contenedores dentro de los contenedores generales de section */
+/* Estilos generales a los pequeños contenedores dentro todas las secciones */
 
 .little-div-1, .little-div-2, .little-div-3, .little-div-4, .little-div-5, .little-div-6 {
   width: 45%;
@@ -146,7 +146,7 @@ h2 {
 .little-div-9, .little-div-12 {
   display: inline-block;
 }
-/* Estilos para cada uno de los pequeños contenedores dentro de los contenedores generales de section */
+/* Estilos para cada uno de los pequeños contenedores dentro de la primera sección*/
 
 .little-div-1 {
   position: relative;
@@ -164,48 +164,6 @@ h2 {
   top: 5px;
 }
 
-/* Estilos para el contenido de cada uno de los pequeños contenedores dentro de los contenedores generales de section */
-
-.mini-div-1 {
-  font-size: 2em;
-  font-weight: 700;
-  margin: 2% 0 3%;
-}
-
-.red {
-  color: #e74c3c;
-  font-size: 2em;
-  font-weight: 700;
-  margin: 2% 0 4%;
-}
-
-.green {
-  color: #64dd17;
-  font-size: 2em;
-  font-weight: 700;
-  margin: 2% 0 3%;
-}
-
-.color-green {
-  outline: 1px solid gold;
-  width: 20px;
-  height: 12px;
-  display: inline-block;
-  background-color: #64dd17;
-}
-
-.color-red {
-  outline: 1px solid gold;
-  width: 20px;
-  height: 12px;
-  display: inline-block;
-  background-color: #ff0000;
-}
-
-.student {
-  display: inline-block;
-}
-
 .little-div-6 ul {
   list-style: none;
   text-align: left;
@@ -217,6 +175,13 @@ h2 {
 
 .section-2 {
   font-size: 0.69em;
+  margin-bottom: 5%;
+}
+
+.section-2 h2 {
+  font-size: 2em;
+  position: relative;
+  top: 3px;
 }
 
 .section-2 select {
@@ -247,25 +212,24 @@ h2 {
 }
 
 .little-div-9 {
-  outline: 1px solid gold;
   width: 41.7%;
   height: 350px;
   position: relative;
-  bottom: 117.5px;
+  bottom: 19px;
 }
 
-/*Clase especial*/
-.rectangular-graphic {
-  margin-left: 2.3%;
-  margin-top: 2%;
-  width: 55%;
-  height: 350px;
-}
 
 /* Estilos a las 3era subsección */
 
 .section-3 {
   font-size: 0.69em;
+  margin-bottom: 5%;
+}
+
+.section-3 h2 {
+  font-size: 2em;
+  position: relative;
+  top: 3px;
 }
 
 .section-3 select {
@@ -296,14 +260,17 @@ h2 {
 }
 
 .little-div-12 {
-  outline: 1px solid gold;
   width: 41.7%;
   height: 350px;
   position: relative;
-  bottom: 117.5px;
+  bottom: 19px;
 }
 
 /* Estilos generales a la 4ta subsección */
+
+.section-4 {
+  margin-bottom: 10%;
+}
 
 .div-6, .div-7, .div-8 {
   padding: 2%;
@@ -377,7 +344,8 @@ h2 {
   position: relative;
   bottom: 2px;
 }
-/* Estilos para cada uno de los pequeños contenedores dentro de los contenedores generales de la cuarta sección */
+
+/*Clases especiales*/
 
 .big-number {
   font-weight: 700;
@@ -387,4 +355,67 @@ h2 {
 
 .fifty {
   display: inline-block;
+  color: #64dd17;
+  font-weight: 700;
+  font-size: 2.5em;
+  margin: 2% 0 2%;
+}
+
+.mini-div-1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 2% 0 3%;
+}
+
+.red {
+  color: #e74c3c;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 2% 0 4%;
+}
+
+.green {
+  color: #64dd17;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 2% 0 3%;
+}
+
+.color-green {
+  width: 20px;
+  height: 12px;
+  display: inline-block;
+  background-color: #64dd17;
+}
+
+.color-red {
+  width: 20px;
+  height: 12px;
+  display: inline-block;
+  background-color: #ff0000;
+}
+
+.student {
+  display: inline-block;
+}
+
+.rectangular-graphic {
+  margin-left: 2.3%;
+  margin-top: 2%;
+  width: 55%;
+  height: 350px;
+}
+
+.circle-graphic {
+  width: 70%;
+  position: relative;
+  left: 58px;
+  padding-top: 2%;
+  padding-bottom: 7%
+}
+
+.color-container {
+  padding-bottom: 2%;
+  padding-left: 8%;
+  letter-spacing: 0.4px;
 }
