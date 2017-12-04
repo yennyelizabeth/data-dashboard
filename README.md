@@ -41,6 +41,6 @@ Con esta información logramos filtrar datos de mayor relevancia para nuestro cl
 
 ## Wireframe
 
-![](assets/recursos/wireframe.png)
+![](assets/sketch_1024.png)
 
 
